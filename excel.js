@@ -357,7 +357,7 @@
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
-                                                      'ID': rec[0].trim(),
+                                                      'MEMBER ID': rec[0].trim(),
                                                       'DESCRIPTION': rec[1].trim(),
                                                       'H1': rec[2].trim(),
                                                       'COMPANY_CODE': rec[3].trim(),
