@@ -346,7 +346,7 @@
                                 var rec_count = 0;
 
                                 var len = 0;
-                                if (lengthfield === 7) {
+                                if (lengthfield === 6) {
                                     for (var i = 1; i < result.split("[$@~!~@$]").length; i++) {
                                         if (result.split("[$@~!~@$]")[i].length > 0) {
 
@@ -359,11 +359,10 @@
                                                     result_final.push({
                                                       'ID': rec[0].trim(),
                                                       'DESCRIPTION': rec[1].trim(),
-                                                      'H1': rec[2].trim(),
+                                                      'ASSET_TYPE': rec[2].trim(),
                                                       'COMPANY_CODE': rec[3].trim(),
                                                       'ASSET_CLASS': rec[4].trim(),
-                                                      'COST_CENTER': rec[5].trim(),
-                                                      'PLANT': rec[6].trim(),
+                                                      'COST_CENTER': rec[5].trim(),                                                   
                                                     });
                                                 }
                                             }
