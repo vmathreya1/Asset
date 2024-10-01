@@ -346,7 +346,7 @@
                                 var rec_count = 0;
 
                                 var len = 0;
-                                if (lengthfield === 6) {
+                                if (lengthfield === 7) {
                                     for (var i = 1; i < result.split("[$@~!~@$]").length; i++) {
                                         if (result.split("[$@~!~@$]")[i].length > 0) {
 
@@ -362,7 +362,8 @@
                                                       'ASSET_TYPE': rec[2].trim(),
                                                       'COMPANY_CODE': rec[3].trim(),
                                                       'ASSET_CLASS': rec[4].trim(),
-                                                      'COST_CENTER': rec[5].trim(),                                                   
+                                                      'COST_CENTER': rec[5].trim(),
+                                                        'CWIP': rec[6].trim(),
                                                     });
                                                 }
                                             }
